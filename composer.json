@@ -1,0 +1,30 @@
+{
+	"name": "armandphilippot/wpcs-lint-fix",
+	"description": "A set of files to lint and fix your file according to WPCS.",
+	"keywords": [
+		"WordPress",
+		"WPCS"
+	],
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://github.com/ArmandPhilippot/wpcs-lint-fix",
+	"authors": [
+		{
+			"name": "Armand Philippot",
+			"homepage": "https://www.armandphilippot.com/",
+			"email": "contact@armandphilippot.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/ArmandPhilippot/wpcs-lint-fix/issues",
+		"source": "https://github.com/ArmandPhilippot/wpcs-lint-fix"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.5",
+		"wp-coding-standards/wpcs": "^2.2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.6.2"
+	},
+	"scripts": {
+		"wplint": "phpcs --standard=WordPress",
+		"wpfix": "phpcbf --standard=WordPress"
+	}
+}
