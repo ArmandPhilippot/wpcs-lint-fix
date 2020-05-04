@@ -6,9 +6,13 @@ A set of configuration files to lint and fix your files according to WordPress C
 
 Download all the files in this repository and place them in the root directory of your project (theme, plugin...).
 
+If your project already contains a composer.json or a package.json file, please check the packages to install them manually (either by copying the contents of the file or by command line).
+
 ## Usage
 
 Open the _phpcs.xml.dist_ file and replace "_yourPrefix_" and "_yourTextDomain_".
+
+### Composer
 
 Make sure [Composer](https://getcomposer.org/) is installed on your system. Then:
 
@@ -43,6 +47,22 @@ composer wpfix /path/to/your/file.ext
 This command will attempt to correct the problems in the specified file.
 
 Some errors cannot be fixed by `phpcbf`, but your text editor should inform you of the remaining problems in your files.
+
+### npm
+
+Make sure [npm](https://www.npmjs.com/) is installed on your system. Then:
+
+```
+npm install
+```
+
+Running this command will:
+
+1. Install Prettier.
+2. Install ESLint.
+3. Install ESLint plugin for WordPress development.
+4. Install Stylelint.
+5. Install Stylelint rules for WordPress develpment.
 
 ## In addition
 
